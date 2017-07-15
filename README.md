@@ -1,3 +1,4 @@
 # Semi-automated Archi Steam Farm installer for Ubuntu linux
-This script needs root privileges.
-After downloading, remember to do chmod +x
+Install ArchiSteamFarm with just few clicks
+## Prerequisites
+To run this script, you must have root permissions, curl and ca-certificates installed

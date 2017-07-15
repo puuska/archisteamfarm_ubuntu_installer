@@ -9,24 +9,13 @@ sudo apt-get update
 sudo apt-get install mono-complete
 echo "Click Enter to continue or CTRL+C to abort"
 read
-echo "Go to https://github.com/JustArchi/ArchiSteamFarm/releases and copy link of latest release Source Code (tar.gz)"
-echo "Enter link in this screen, click CTRL+X then Y"
+echo "Now we will download latest release"
 echo "Click Enter to continue or CTRL+C to abort"
 read
-nano link.txt
+curl -L https://api.github.com/repos/justarchi/ArchiSteamFarm/tarball | tar zx
 echo "Click Enter to continue or CTRL+C to abort"
 read
-link=$(cat link.txt)
-wget $link
-echo "Click Enter to continue or CTRL+C to abort"
-read
-echo "Enter the name of downloaded file in this screen, click CTRL+X then Y"
-echo "Click Enter to continue or CTRL+C to abort"
-read
-nano name.txt
-name=$(cat name.txt)
-tar xf $name
-cd ArchiSteamFarm*
+cd JustArchi*
 ./cc.sh
 mv out/ ~/idler
 cd ~/idler/config
@@ -52,6 +41,4 @@ echo "1. Bitcoin address 3J2uWx5bujypX33P8yG6TKT2A3VYytEgv1"
 echo "2. Bitcoin address 1DVaxfrWbCYWATCsh6Yyjrs8xEEC2o6d7p"
 echo "Steam Trade URL: https://steamcommunity.com/tradeoffer/new/?partner=326403122&token=5c3WlvbI"
 echo "Thank you for using script. Press Enter to exit :)"
-rm ~/name.txt
-rm ~/link.txt
 read
