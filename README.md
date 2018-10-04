@@ -1,4 +1,4 @@
-#[OUTDATED ATM]
+# [OUTDATED AT THIS MOMENT]
 # Semi-automated Archi Steam Farm installer for Ubuntu linux
 Install ArchiSteamFarm with just few clicks
 ## Prerequisites
