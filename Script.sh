@@ -5,17 +5,16 @@ read
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list
 sudo apt-get update
-sudo apt-get install mono-complete curl ca-certificates
+sudo apt-get install mono-complete ca-certificates curl git wget
 echo "Click Enter to continue or CTRL+C to abort"
 read
 echo "Now we will download latest release"
 echo "Click Enter to continue or CTRL+C to abort"
 read
-curl -L https://api.github.com/repos/JustArchiNET/ArchiSteamFarm/tarball 
-| tar zx
+git clone https://github.com/JustArchiNET/ArchiSteamFarm
 echo "Click Enter to continue or CTRL+C to abort"
 read
-cd JustArchi*
+cd ArchiSteamFarm
 ./cc.sh
 mv out/ ~/idler
 cd ~/idler/config
