@@ -19,7 +19,9 @@ cd ArchiSteamFarm
 mv out/ ~/idler
 cd ~/idler/config
 cp example.json YourBot.json
-echo "Now configure your bot. I open example config for you and you must input your Steam Username, password and games that you want to play while idle"
+echo "Now configure your bot. I will open example config for you. In 
+this file, you must input your Steam Username, password and games that 
+you want to play while idle"
 echo "Also do not forget to change Enabled from false to true"
 read
 echo "Click Enter to continue or CTRL+C to abort"
