@@ -1,6 +1,5 @@
 #!/bin/bash
 echo "Created with love by Puuska. Powered by Archi Steam Farm"
-echo "Do not modify this without permissions"
 echo "Click Enter to continue or CTRL+C to abort"
 read
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
@@ -12,7 +11,8 @@ read
 echo "Now we will download latest release"
 echo "Click Enter to continue or CTRL+C to abort"
 read
-curl -L https://api.github.com/repos/justarchi/ArchiSteamFarm/tarball | tar zx
+curl -L https://api.github.com/repos/JustArchiNET/ArchiSteamFarm/tarball 
+| tar zx
 echo "Click Enter to continue or CTRL+C to abort"
 read
 cd JustArchi*
