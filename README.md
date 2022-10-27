@@ -1,4 +1,4 @@
-# [OUTDATED AT THIS MOMENT]
+# [old shitty code, doesn't work anyway for anything newer than ASF v2 and I have no idea why would you use it
 # Semi-automated Archi Steam Farm installer for Ubuntu linux
 Install ArchiSteamFarm with just few clicks
 
